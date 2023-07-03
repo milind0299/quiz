@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'logo.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
   const Home(this.logoUrl, this.buttonText, this.startQuiz, {super.key});
@@ -15,10 +16,10 @@ class Home extends StatelessWidget {
       children: [
         Logo(logoUrl),
         const SizedBox(height: 50),
-        const Text(
-          'Learn flutter the fun way',
-          style: TextStyle(
-            color: Colors.white,
+        Text(
+          'Learn flutter the fun way!',
+          style: GoogleFonts.lato(
+            color: const Color.fromARGB(255, 166, 215, 246),
             fontSize: 20,
           ),
         ),
